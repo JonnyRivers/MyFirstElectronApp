@@ -1,0 +1,22 @@
+{
+  "name": "myfirstelectronapp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonnyRivers/MyFirstElectronApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonnyRivers/MyFirstElectronApp/issues"
+  },
+  "homepage": "https://github.com/JonnyRivers/MyFirstElectronApp#readme",
+  "devDependencies": {
+    "electron": "^2.0.5"
+  }
+}
