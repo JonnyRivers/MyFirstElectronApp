@@ -1,4 +1,6 @@
 import {app, BrowserWindow} from "electron";
+import * as path from "path";
+import * as url from "url";
   
   // Keep a global reference of the window object, if you don't, the window will
   // be closed automatically when the JavaScript object is garbage collected.
@@ -9,7 +11,11 @@ import {app, BrowserWindow} from "electron";
     mainWindow = new BrowserWindow({width: 800, height: 600})
   
     // and load the index.html of the app.
-    mainWindow.loadFile('index.html')
+    mainWindow.loadURL(url.format({
+      pathname: path.join(__dirname, "../index.html"),
+      protocol: "file:",
+      slashes: true,
+  }));
   
     // Open the DevTools.
     mainWindow.webContents.openDevTools()
