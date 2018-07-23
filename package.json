@@ -2,9 +2,9 @@
   "name": "myfirstelectronapp",
   "version": "0.1.0",
   "description": "",
-  "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "build": "tsc",
+    "start": "electron ./app/main.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/JonnyRivers/MyFirstElectronApp#readme",
   "devDependencies": {
-    "electron": "^2.0.5"
+    "electron": "^2.0.5",
+    "typescript": "^2.9.2"
   }
 }
